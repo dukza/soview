@@ -5,7 +5,7 @@ export default class SearchForm extends React.Component{
     render(){
         return(
             <>
-                <form className="w-100 border rounded-pill mb-5 d-flex align-items-center searchForm" method="post" onSubmit={function(e){
+                <form className="w-100 rounded-pill mb-5 d-flex align-items-center searchForm" method="post" onSubmit={function(e){
                     e.preventDefault();
                     // debugger;
                     this.props.onSubmit(e.target.searchFormInput.value);

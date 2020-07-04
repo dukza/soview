@@ -1,12 +1,33 @@
-import React from 'react';
+import React,{Component} from 'react';
+import {render} from 'react-dom';
+import $ from "jquery";
+import jquery from "jquery";
+
 import './css/App.css';
 import './css/style.css';
+import './css/all.css';
+// import "./js/jquery-1.12.4.min.js";
+
+
+
+// window.$ = window.jQuery = jQuery;
+// import './js/common.js';
+
 import SearchForm from './components/SearchForm';
 import SearchBtn from './components/SearchBtn';
 import SearchLink from './components/SearchLink';
 
 
 export default class App extends React.Component{
+  componentDidMount() {
+    $('.js-close').on({
+      click:function(){
+        var target = $(this).data('target');
+        $('.page').attr("data-name",target).hide();
+        $(this).hide();
+      }
+    })
+  }
   state = {
     searchBtns:[
       {
@@ -176,11 +197,12 @@ export default class App extends React.Component{
   render(){
     const {searchBtns,searchLinks} = this.state;
     return(
-      <div className="App h-100 d-flex align-items-center justify-content-center mt-7">
-        <div className="h-100 mx-2 page">
+      <div className="h-100 d-flex align-items-center justify-content-center positon-relative App">
+        <a className="text-muted cursor-pointer ml-auto positon-absolute js-close" data-target="page"><i className="fas fa-times"></i></a>
+        <div className="h-100 mx-2 page" data-name="page">
           <div className="w-100 d-flex align-items-center justify-content-center flex-column">
             {/* 타이틀 */}
-            <div>
+            <div className="mt-7">
               <div className="h1 font-weight-bolder mb-2">SEARCH</div>
               <div className="mt-1 mb-5">어떤 선생님, 학원, 시험을 찾으세요?</div>
             </div>
@@ -197,11 +219,11 @@ export default class App extends React.Component{
 
           {/* 검색버튼 */}
           <div className="w-100 d-flex align-items-stretch mb-4">
-            <span class="text-left font-weight-bolder mr-4 searchLabel">시험별 검색</span>
+            <span className="text-left font-weight-bolder mr-4 searchLabel">시험별 검색</span>
             <div className="text-left flex-wrap">
-              {searchBtns.map(searchBtn => {
+              {searchBtns.map((searchBtn,index) => {
                   return (
-                    <SearchBtn label={searchBtn.label} link={searchBtn.link}/>
+                    <SearchBtn key={index} label={searchBtn.label} link={searchBtn.link}/>
                   )
               })}
             </div>
@@ -209,11 +231,11 @@ export default class App extends React.Component{
           {/* 검색버튼 */}
           {/* 추천링크 */}
           <div className="w-100 d-flex align-items-stretch flex-row mb-7">
-            <div class="text-left font-weight-bolder mr-4 searchLabel">추천 #링크</div>
+            <div className="text-left font-weight-bolder mr-4 searchLabel">추천 #링크</div>
             <div className="text-left flex-wrap">
-              {searchLinks.map(searchLink => {
+              {searchLinks.map((searchLink,index) => {
                   return (
-                    <SearchLink label={searchLink.label} link={searchLink.link}/>
+                    <SearchLink key={index} label={searchLink.label} link={searchLink.link}/>
                   )
               })}              
             </div>

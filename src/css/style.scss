@@ -163,6 +163,7 @@ $xsmall: 0.75rem;
 
 // 보더
 .border{
+	border: 1px solid $color-border !important;
 	&-muted{
 		border: 1px solid $color-muted !important;
 	}
@@ -277,7 +278,10 @@ $xsmall: 0.75rem;
 .form-control{
 	font-size: 1rem;
 }
-
+// 커서
+.cursor-pointer{
+	cursor: pointer;
+}
 // 효과
 .hover-white{
 	&:hover{
@@ -457,7 +461,9 @@ $spacer:1rem;
 	&b-10{
 		margin-bottom: $spacer*5.5;
 	}	
-
+	&l-auto{
+		margin-left: auto;
+	}
 }
 .p{
 	&t-2{
@@ -689,6 +695,16 @@ $list-padding-left:1.8rem;
 		padding-left: 2.5rem;
 	}
   }
+//   포지션
+.positon{
+	&-relative{
+		position: relative;
+	}
+	&-absolute{
+		position: absolute;
+	}
+}
+	
 // 디스플레이
 // 플렉스
 .d{
@@ -912,4 +928,8 @@ $list-padding-left:1.8rem;
 	&:focus{
 		outline:none;
 	}	
+}
+.js-close{
+	right: 48px;
+	top: 48px;
 }
