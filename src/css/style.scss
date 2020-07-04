@@ -896,6 +896,9 @@ $list-padding-left:1.8rem;
 	height: 38px;
 	background-color: transparent !important;
 	border: none !important;
+	&:focus{
+		outline:none;
+	}	
 }
 .searchFormSelect{
 	color:#3758e0;
@@ -905,4 +908,8 @@ $list-padding-left:1.8rem;
 	background-image: url('../images/search-solid.svg');
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
+	&:focus{
+		outline:none;
+	}	
 }
