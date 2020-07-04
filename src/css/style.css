@@ -1028,6 +1028,7 @@ body {
 .searchFormSelect {
   color: #3758e0;
   font-weight: 600;
+  background-color: transparent !important;
 }
 
 .searchFormBtn {

@@ -919,6 +919,7 @@ $list-padding-left:1.8rem;
 .searchFormSelect{
 	color:#3758e0;
 	font-weight: $font-weight-bolder;
+	background-color: transparent !important;
 }
 .searchFormBtn{
 	background-image: url('../images/search-solid.svg');
