@@ -1,7 +1,6 @@
 {
   "name": "soview",
   "version": "0.1.0",
-  "sasslintConfig": "./src/css/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -34,8 +33,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://dukza.github.io/soview/",
   "devDependencies": {
     "sass-lint": "^1.13.1"
-  }
+  },
+  "homepage": "https://dukza.github.io/soview/"
 }
