@@ -8,7 +8,7 @@ export default class SearchBtn extends React.Component{
     render(){
         return(
             <>
-                <a className="btn" href={this.props.link}>{this.props.label}</a>
+                <a className="btn btn-white border-lighter rounded-pill mt-1 mb-1 mx-1 searchBtn" href={this.props.link}>{this.props.label}</a>
             </>
         )
     }

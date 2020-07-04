@@ -176,38 +176,47 @@ export default class App extends React.Component{
   render(){
     const {searchBtns,searchLinks} = this.state;
     return(
-      <div className="App h-100 d-flex align-items-center justify-content-center flex-column">
-        <div className="page">
-          {/* 타이틀 */}
-          <div className="h1 font-weight-bolder">SEARCH</div>
-          <div className="mt-1">어떤 선생님, 학원, 시험을 찾으세요?</div>
-          {/* 타이틀 */}
-          {/* 검색바 */}
-          <SearchForm onSubmit={function(searchInput){
-            console.log(searchInput)
-            // this.setState({
+      <div className="App h-100 d-flex align-items-center justify-content-center mt-7">
+        <div className="h-100 mx-2 page">
+          <div className="w-100 d-flex align-items-center justify-content-center flex-column">
+            {/* 타이틀 */}
+            <div>
+              <div className="h1 font-weight-bolder mb-2">SEARCH</div>
+              <div className="mt-1 mb-5">어떤 선생님, 학원, 시험을 찾으세요?</div>
+            </div>
+            {/* 타이틀 */}
+            {/* 검색바 */}
+            <SearchForm onSubmit={function(searchInput){
+              console.log(searchInput)
+              // this.setState({
 
-            // })
-          }.bind(this)}/>
-          {/* 검색바 */}
+              // })
+            }.bind(this)}/>
+            {/* 검색바 */}
+          </div>
+
           {/* 검색버튼 */}
-          <div className="w-100 align-items-start">
-            <span class="font-weight-bolder">시험별 검색</span>
-            {searchBtns.map(searchBtn => {
-                return (
-                  <SearchBtn label={searchBtn.label} link={searchBtn.link}/>
-                )
-            })}
+          <div className="w-100 d-flex align-items-stretch mb-4">
+            <span class="text-left font-weight-bolder mr-4 searchLabel">시험별 검색</span>
+            <div className="text-left flex-wrap">
+              {searchBtns.map(searchBtn => {
+                  return (
+                    <SearchBtn label={searchBtn.label} link={searchBtn.link}/>
+                  )
+              })}
+            </div>
           </div>
           {/* 검색버튼 */}
           {/* 추천링크 */}
-          <div className="w-100 align-items-start">
-            <span class="font-weight-bolder">추천 #링크</span>
-            {searchLinks.map(searchLink => {
-                return (
-                  <SearchLink label={searchLink.label} link={searchLink.link}/>
-                )
-            })}
+          <div className="w-100 d-flex align-items-stretch flex-row mb-7">
+            <div class="text-left font-weight-bolder mr-4 searchLabel">추천 #링크</div>
+            <div className="text-left flex-wrap">
+              {searchLinks.map(searchLink => {
+                  return (
+                    <SearchLink label={searchLink.label} link={searchLink.link}/>
+                  )
+              })}              
+            </div>
           </div>
           {/* 추천링크 */}
         </div>
