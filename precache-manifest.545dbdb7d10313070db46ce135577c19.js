@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b10d9c57b1b90fd9ae0b3f768d2b7ae",
+    "revision": "e5f27baa86b36486f2427f7a504073ca",
     "url": "/soview/index.html"
   },
   {
-    "revision": "c3091f6f4825c3b37e58",
-    "url": "/soview/static/css/main.e8c20246.chunk.css"
+    "revision": "ec43026e97bfe70cbdf7",
+    "url": "/soview/static/css/main.94ced8c3.chunk.css"
   },
   {
     "revision": "d412bae80be6fb81f2b8",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/soview/static/js/2.a02a764b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c3091f6f4825c3b37e58",
-    "url": "/soview/static/js/main.b3f610fb.chunk.js"
+    "revision": "ec43026e97bfe70cbdf7",
+    "url": "/soview/static/js/main.6d9a8dbf.chunk.js"
   },
   {
     "revision": "f00461a5c59d6f17ae53",
