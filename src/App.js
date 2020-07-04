@@ -198,7 +198,7 @@ export default class App extends React.Component{
     const {searchBtns,searchLinks} = this.state;
     return(
       <div className="h-100 d-flex align-items-center justify-content-center positon-relative App">
-        <a className="text-muted cursor-pointer ml-auto positon-absolute js-close" data-target="page"><i className="fas fa-times"></i></a>
+        <a className="text-muted h2 cursor-pointer ml-auto positon-absolute js-close" data-target="page"><i className="fal fa-times"></i></a>
         <div className="h-100 mx-2 page" data-name="page">
           <div className="w-100 d-flex align-items-center justify-content-center flex-column">
             {/* 타이틀 */}
