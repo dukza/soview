@@ -1,0 +1,128 @@
+$color-black-5:rgba(0,0,0,.05);
+
+$color-black:#000;
+$color-dark : #232930;
+$color-brand-dark : #232930;
+$color-body:#666;
+$color-bodyLight:#7F8A98;
+$color-secondary:#6c757d;
+// rgba(108,117,125,1)
+$color-secondary-30:rgba(108,117,125,.3);
+$color-gray:#808080;
+$color-grayDark:#ededed;
+$color-grayLight:#F2F2F2;
+$color-small: #acacac;
+$color-muted: #999;
+// 217,217,217
+$color-zone: #ebedf3;
+// 238,238,238
+$color-light:#F6F6F8;
+$color-lighter:#fafafa;
+$color-zone:#F8F9FA;
+$color-white:#ffffff;
+
+$color-border:#dee2e6;
+
+$color-primary:#3c64e6;
+$color-info:rgb(50, 108, 249);
+$color-red:#FF635D;
+$color-highlight: #f7f7f9;
+$color-warning:#ffc107;
+$color-danger:#FF635D;
+$color-navy:#0d327b;
+$color-light-hover:#dae0e5;
+$color-org:#fd7e14;
+$color-lightgray:#E5E5E5;
+// #cce5ff
+$color-alert-primary:rgba(204,229,255,1);
+$color-alert-primary-50:rgba(204,229,255,.5);
+$color-alert-primary-30:rgba(204,229,255,.3);
+$color-alert-primary-20:rgba(204,229,255,.2);
+$color-pink:#FF5E62;
+
+// 투명도 그림자
+// $opacity-50:.5;
+// $opacity-light:.03;
+// $opacity-95:.95;
+$color-zone-50:rgba(238,238,238,.5);
+$color-black-light:rgba(0,0,0,.02);
+$color-black-10:rgba(0,0,0,.1);
+$color-black-20:rgba(0,0,0,.2);
+$color-black-50:rgba(0,0,0,.5);
+$color-brand-blue-50:rgba(23,43,77,.6);
+$color-brand-blue-10:rgba(23,43,77,.05);
+$color-zone-90:rgba(238,238,238,.9);
+
+$color-white-light:rgba(255,255,255,0.97);
+$color-white-20:rgba(255,255,255,.2);
+$color-white-50:rgba(255,255,255,.5);
+
+$color-brand-blue:#0d327b ;
+$color-brand-orange:#faac18 ;
+
+
+$box-shadow:0 2px 4px 0 rgba(69,79,89, 0.1);
+$box-shadow-lg:0 8px 19px 0 rgba(0,0,0,0.2);
+$box-shadow-md:rgba(9, 30, 66, 0.25) 0px 8px 16px -4px, rgba(9, 30, 66, 0.31) 0px 0px 1px;
+  // $hover-white:darken($color-white,2%);
+// $hover-black:darken($color-black,2%);
+
+// 64px
+$h1: 4rem;
+// 56px
+$h2: 3.5rem;
+// 48px
+$h3: 3rem;
+// 40px
+$h4: 2.5rem;
+// 32px
+$h5: 2rem;
+// 28px
+$h6: 1.75rem;
+// 24px
+$h7: 1.5rem;
+// 20px
+$h8: 1.2rem;
+// 16px
+$h9: 1rem;
+// 12px
+$h10: 12px;
+// 14px
+$font-body: 14px;
+$font-small: 11px;
+// 대략14px
+$small: 87%;
+// 대략11px
+$small-xs: 69%;
+
+
+$size-spacer:1rem;
+
+$z-index9:99;
+$z-index8:88;
+$z-index7:77;
+$z-index6:66;
+// 'Roboto', 'Noto Sans Korean', '돋움', dotum, Arial, sans-serif
+// $font-family:'Noto Sans KR', sans-serif, Malgun Gothic, "맑은 고딕",sans-serif;
+$font-family:'NotoSans Light',Sans-serif; 
+$font-family2:'Inria Serif';
+$font-eng:'Oswald', sans-serif;
+$font-number:'Roboto', sans-serif;
+
+
+$font-weight-bold:700;
+$font-weight-bolder:600;
+$font-weight-normal:500;
+$font-weight-lighter:200;
+$font-weight-light:400;
+
+
+$font-weight-light-sm:300;
+
+
+
+$rounded-pill:50rem;
+$rounded-0:0;
+$rounded: $size-spacer/4;
+
+
