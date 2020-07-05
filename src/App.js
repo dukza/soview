@@ -1,17 +1,9 @@
-import React,{Component} from 'react';
-import {render} from 'react-dom';
+import React from 'react';
 import $ from "jquery";
-import jquery from "jquery";
 
 import './css/App.css';
 import './css/style.css';
-import './css/all.css';
-// import "./js/jquery-1.12.4.min.js";
 
-
-
-// window.$ = window.jQuery = jQuery;
-// import './js/common.js';
 
 import SearchForm from './components/SearchForm';
 import SearchBtn from './components/SearchBtn';
@@ -198,12 +190,12 @@ export default class App extends React.Component{
     const {searchBtns,searchLinks} = this.state;
     return(
       <div className="h-100 d-flex align-items-center justify-content-center positon-relative App">
-        <a className="text-muted h2 cursor-pointer ml-auto positon-absolute js-close" data-target="page"><i className="fal fa-times"></i></a>
+        <a className="cursor-pointer ml-auto positon-absolute js-close" data-target="page"></a>
         <div className="h-100 mx-2 page" data-name="page">
           <div className="w-100 d-flex align-items-center justify-content-center flex-column">
             {/* 타이틀 */}
             <div className="mt-7">
-              <div className="h1 font-weight-bolder mb-2">SEARCH</div>
+              <div className="h1 font-weight-bolder mb-2 pageTitle">SEARCH</div>
               <div className="mt-1 mb-5">어떤 선생님, 학원, 시험을 찾으세요?</div>
             </div>
             {/* 타이틀 */}
